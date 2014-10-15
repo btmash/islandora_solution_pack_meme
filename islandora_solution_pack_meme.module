@@ -20,7 +20,7 @@ function islandora_solution_pack_meme_islandora_required_objects(IslandoraTuque 
   $meme_collection = $connection->repository->constructObject('islandora:meme_collection');
   $meme_collection->owner = 'fedoraAdmin';
   $meme_collection->label = 'Meme Collection';
-  $meme_collection->models = 'islandora:collectionCModel';
+  $meme_collection->models = 'fedora-system:ContentModel-3.0';
   $meme_collection->relationships->add(FEDORA_RELS_EXT_URI, 'isMemberOfCollection', 'islandora:root');
 
   // Meme collection policy.
